@@ -1,4 +1,5 @@
 body{
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0.03);
   overflow-y: scroll;
 }
@@ -38,23 +39,32 @@ body{
   font-size: 0.75em;
 }
 .f-s-2{
-  font-size: 1.1em;
+  font-size: 0.95em;
 }
 .f-s-3{
   font-size: 1.25em;
 }
 .sidenav p{
   color: #ffc700;
-
+  font-size: 0.65em;
   margin-top: 0;
 }
 .sidenav li i{
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .sidenav li{
   margin-bottom: 10px;
+  font-size: 0.90em;
+}
+.sidenav ul li ul{
+  margin-bottom: 30px;
+}
+.sidenav ul li ul li a:not(i){
+  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
 }
 .top-nav{
+  box-shadow: 0 2px 10px 10px #000;
   box-shadow: 0 2px 10px 10px rgba(0, 0, 0, 0.05);
   margin-top: 0;
   border: 0;
@@ -67,7 +77,8 @@ body{
   background-color: blue;
 }
 .faint-1{
-  color: rgba(0, 0, 0, 0.5);
+  color: #000;
+  color: rgba(0, 0, 0, 0.7);
 }
 .bold{
   font-weight: bold;
@@ -108,6 +119,7 @@ body{
 .btn-primary{
   background: linear-gradient(135deg,#6F23FF 0,#627cf5 100%);
   color: #fff;
+  box-shadow: 0 2px 4px 5px #000;
   box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.12);
 }
  .btn-effect{
@@ -117,9 +129,11 @@ body{
 .btn-effect:hover{
   background: linear-gradient(135deg,#6F23FF 0,#627cf5 100%);
   color: #fff;
+  box-shadow: 0 2px 4px 5px #000;
   box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.12);
 }
 .progress-content-header{
+  border-bottom: 1px solid #000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   height: 50px;
 }
@@ -132,6 +146,8 @@ body{
 }
 .progress-content-body a{
   text-decoration: none;
+  color: #0000ff;
+  color: rgba(0, 0, 255, 0.7);
 }
 .progress-content-body a:hover{
   text-decoration: underline;
@@ -163,16 +179,30 @@ body{
   border-radius: 6px;
 }
 .progress-content-body > div:nth-of-type(n+2):hover{
+  background-color: rgb(23, 162, 184);
   background-color: rgba(23, 162, 184, 0.1);
+}
+.progress-content-body > div:nth-of-type(n+2):hover button{
+  background-color: #0000ff;
+  background-color: rgba(0, 0, 255, 0.8);
 }
 .progress-content-body > div{
   height: 45px;
+}
+.progress-content-body > div div:last-of-type button{
+  padding: 8px 12px;
+  background-color: #0000ff;
+  background-color: rgba(0, 0, 255, 0.7);
+  color: white;
+  border-radius: 4px;
+  border: 0;
 }
 .progress-content-body > div > div{
   height: 45px;
   line-height: 45px;
 }
 .progress-content-body > div:nth-of-type(2n){
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0.03);
 }
 .cl-w{
@@ -195,6 +225,6 @@ body{
 .text-center{
   text-align: center;
 }
-.solo:hover .btn-txt{
+.solo:hover div:nth-of-type(2) .btn-txt{
   background-color: #fff;
 }
