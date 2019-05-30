@@ -1,10 +1,12 @@
 body{
-  background-color: rgba(0, 0, 255, 0.02);
+  background-color: rgba(0, 0, 0, 0.03);
+  overflow-y: scroll;
 }
 .sidenav{
   background: linear-gradient(135deg,#6F23FF 0,#627cf5 100%);
   height: 100vh;
-  overflow-y: scroll;
+  position: sticky;
+  top: 0;
 }
 .logo{
   width: 60px;
@@ -36,9 +38,9 @@ body{
   font-size: 0.75em;
 }
 .f-s-2{
-  font-size: 1em;
+  font-size: 1.1em;
 }
-.f-s-2{
+.f-s-3{
   font-size: 1.25em;
 }
 .sidenav p{
@@ -106,6 +108,7 @@ body{
 .btn-primary{
   background: linear-gradient(135deg,#6F23FF 0,#627cf5 100%);
   color: #fff;
+  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.12);
 }
  .btn-effect{
   color: black;
@@ -114,6 +117,28 @@ body{
 .btn-effect:hover{
   background: linear-gradient(135deg,#6F23FF 0,#627cf5 100%);
   color: #fff;
+  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.12);
+}
+.progress-content-header{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 50px;
+}
+.progress-content-header p{
+  height: 50px;
+  line-height: 50px;
+}
+.pl-20{
+  padding-left: 20px;
+}
+.progress-content-body a{
+  text-decoration: none;
+}
+.progress-content-body a:hover{
+  text-decoration: underline;
+}
+.progress-content-body p{
+  font-size: 0.8em;
+  font-weight: bold;
 }
 /*
 .btn-effect:hover::after{
@@ -121,10 +146,55 @@ body{
   transition: background-color 1s ease-in-out;
 }
 .btn-effect::after{
-  display: none;
+  display: none;                      TODO
   content: 'Coding Challenges';
   color: #fff;
   padding: 8px;
   background-color: linear-gradient(135deg,#6F23FF 0,#627cf5 100%);
   border-radius: 4px;
 } */
+.progress-content-body p{
+  margin: 0;
+  padding: 0;
+}
+.progress-content{
+  background-color: #fff;
+  margin-top: 35px;
+  border-radius: 6px;
+}
+.progress-content-body > div:nth-of-type(n+2):hover{
+  background-color: rgba(23, 162, 184, 0.1);
+}
+.progress-content-body > div{
+  height: 45px;
+}
+.progress-content-body > div > div{
+  height: 45px;
+  line-height: 45px;
+}
+.progress-content-body > div:nth-of-type(2n){
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.cl-w{
+  color: #fff;
+}
+.btn-txt{
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.73em;
+}
+.btn-txt-primary{
+  background-color: #784c8a;
+}
+.btn-txt-success{
+  background-color: #28a745;
+}
+.btn-txt-info{
+  background-color: #007bff;
+}
+.text-center{
+  text-align: center;
+}
+.solo:hover .btn-txt{
+  background-color: #fff;
+}
